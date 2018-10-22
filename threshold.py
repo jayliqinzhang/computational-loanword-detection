@@ -89,15 +89,6 @@ def eva(thres,tuple_list_concept_ipa_dis,gold):
         else:
             predict_non_loanwords.append((tt[0],tt[2],tt[3]))
             
-            
-#        
-#    for k,v in no_duplicate_dic_ipa_and_dis.items():
-#        #print(v[1])
-#        if float(v[1])<thres:
-#            try:
-#                predict_loanwords.append((k.split('_')[3],v[0][0][:-1],v[0][1][:-1]))
-#            except IndexError:
-#                pass
     
     ##create predict classify. aka assign 1 or 0 to the predicted loanwords. 
     predict_classifying_word_ipa=[]
