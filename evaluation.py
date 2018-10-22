@@ -357,11 +357,6 @@ def best_threshold(tup, plot=False):
     else:
         return max_f1, best_threshold
     
-    
-    
-    
-
-
 
 ##using cross validation to check the performance. -------------------##
 
@@ -412,49 +407,9 @@ def cross_validate_output_train_test_set(tuple_list,k_fold):
     return train_set,test_set
 
 
-
-
-
-#divide the tuples into train set and test set. 
-#train_tuples,test_tuples=cross_validate_output_train_test_set(ipa_distance_tuple_list,10)
-#
-#
-#cv_pre_list=[]
-#cv_rec_list=[]
-#cv_f1_list=[]
-#cv_predict_result=[]
-#cv_gold_from_test_set=[]
-#for t in range(len(train_tuples)):
-#    
-#    b_f1,b_thres=best_threshold(train_tuples[t])
-#    
-#    
-#    
-#    gold_from_test=create_gold_standard_classify(tuple_with_dis_to_tuple_no_dis(test_tuples[t]))
-#    
-#    pre,rec,f1,loan=eva(b_thres,test_tuples[t],gold_from_test)
-#      
-#    
-#    print(pre,'   ',rec,'   ',f1)
-#    
-#    cv_pre_list.append(pre)
-#    cv_rec_list.append(rec)
-#    cv_f1_list.append(f1)
-#    cv_predict_result.append(loan)
-#    cv_gold_from_test_set.append(gold_from_test)
-#    
-#
-
-
-
-## Explore the data we have. 
-
 s_precision,s_recall,s_f1,loan,s_threshold_list=best_threshold(ipa_distance_tuple_list,plot=True)
 
-#print (max(s_f1))
 
-#print (s_threshold_list[s_f1.index(max(s_f1))])                     
-                             
 
 
 
