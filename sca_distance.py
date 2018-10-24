@@ -1,25 +1,9 @@
-import os
-from collections import defaultdict
-
-import itertools
-
-import numpy as np
-
-from collections import Counter
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-from sklearn.model_selection import KFold
-
-import matplotlib.pyplot as plt
-
-
 from lingpy import *
 import xlrd
 
 
-book=xlrd.open_workbook("mydata.xls")
-
+book=xlrd.open_workbook("data/mydata.xls")
 sheet=book.sheet_by_index(0)
-
 
 concepts=sheet.row_values(0,start_colx=1)
 turkic=sheet.row_values(1,start_colx=1)
@@ -81,18 +65,6 @@ import pickle
 
 with open ('sac_distance.pkl','wb') as f:
     pickle.dump(ipa_distance_tuple_list,f)
-
-
-    
-    
-    
-    
-    
-
-
-
-
-
 
 
 
