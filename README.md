@@ -32,7 +32,7 @@ The [cognate_list.pickle](https://github.com/jayliqinzhang/computational-loanwor
 
 # SCA Sound distance
 
-Running the [sca_distance.py](https://github.com/jayliqinzhang/computational-loanword-detection/blob/master/sca_distance.py) output the sound distance generated from the SCA-based method. 
+Running the [sca_distance.py](https://github.com/jayliqinzhang/computational-loanword-detection/blob/master/sca_distance.py) output the sound distance generated from the SCA-based method. The result is [sca_distance.pkl](https://github.com/jayliqinzhang/computational-loanword-detection/blob/master/data/sca_distance.pkl). 
 
 
 # Threshold
