@@ -1,5 +1,6 @@
 from lingpy import *
 import xlrd
+import pickle
 
 
 book=xlrd.open_workbook("data/mydata.xls")
@@ -61,8 +62,6 @@ for k,v in ipa_pair_dict.items():
     tuples_with_alignment.append((k.split('_')[0],distance,''.join(v[0]),''.join(v[1]),ipa1,ipa2))
     
     
-import pickle
-
 with open ('sac_distance.pkl','wb') as f:
     pickle.dump(ipa_distance_tuple_list,f)
 
