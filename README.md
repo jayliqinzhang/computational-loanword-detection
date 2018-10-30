@@ -3,7 +3,7 @@ This code repository implement the method of computational loanword detection us
 
 # Data 
 
-The [mydata.xls](https://github.com/jayliqinzhang/computational-loanword-detection/blob/master/data/mydata.xls) generated according to the data from Mennecier et al. (2016). 
+The [mydata.xls](https://github.com/jayliqinzhang/computational-loanword-detection/blob/master/data/mydata.xls) is generated according to the data from Mennecier et al. (2016). 
 
 
 ## Distance data
