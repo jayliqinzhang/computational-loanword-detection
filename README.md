@@ -3,7 +3,7 @@ This code repository implement the method of computational loanword detection us
 
 # Data 
 
-The [mydata.xls](https://github.com/jayliqinzhang/computational-loanword-detection/blob/master/data/mydata.xls) is generated according to the data from Mennecier et al. (2016). 
+The [mydata.xls](https://github.com/jayliqinzhang/computational-loanword-detection/blob/master/data/mydata.xls) is a re-formating of the data from Mennecier et al. (2016). There are three rows in the data, which are concepts, pronunciations (in ipa) of the concepts in Turkic, and pronunciations (in ipa) of the concepts in Indo-Iranian. In each cell, it contains a list of pronunciations which are the records of all the interviewees making the sounds. In the columns are the concepts which are shown to the interviewees.     
 
 
 ## Distance data
@@ -27,12 +27,18 @@ for instance,
 ```
 
 ## Cognate data
+
 The [cognate_list.pickle](https://github.com/jayliqinzhang/computational-loanword-detection/blob/master/data/cognate_list.pickle) is the data containing the gold standard of cognate. It is a list of tuples and each tuple contains a pair of pronunciations (represented by IPA). Each pair in the list is identified as cognate by the expert. It is used for the evaluation of the performance of the model to automatically detect the loanwords. 
 
 
 # SCA Sound distance
 
 Running the [sca_distance.py](https://github.com/jayliqinzhang/computational-loanword-detection/blob/master/sca_distance.py) output the sound distance generated from the SCA-based method. The result is [sca_distance.pkl](https://github.com/jayliqinzhang/computational-loanword-detection/blob/master/data/sca_distance.pkl). 
+
+
+# PMI sound distance 
+
+[Lo4](http://www.let.rug.nl/kleiweg/L04/) is a software for dialectometrics and cartography. It provides [methods](http://www.let.rug.nl/kleiweg/L04/Manuals/leven.html) to generate the PMI-based operation cost for the calculation of the Levenshtein distance. 
 
 
 # Threshold
