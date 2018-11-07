@@ -38,7 +38,7 @@ Running the [sca_distance.py](https://github.com/jayliqinzhang/computational-loa
 
 # PMI sound distance 
 
-[Lo4](http://www.let.rug.nl/kleiweg/L04/) is a software for dialectometrics and cartography. It provides [methods](http://www.let.rug.nl/kleiweg/L04/Manuals/leven.html) to generate the PMI-based operation cost for the calculation of the Levenshtein distance. 
+[Lo4](http://www.let.rug.nl/kleiweg/L04/) is a software for dialectometrics and cartography. It provides a [program ('leven')](http://www.let.rug.nl/kleiweg/L04/Manuals/leven.html) to generate the PMI-based operation cost for the calculation of the Levenshtein distance. In this project, the PMI-based distance is generated with this "leven" program. More detail is in [here] (http://www.let.rug.nl/kleiweg/L04/Manuals/leven.html).
 
 
 # Threshold
